@@ -1,0 +1,15 @@
+name: "First actions job"
+on: push
+jobs:
+  firstjob:
+    runs-on: ubuntu-latest
+    steps:
+    - name: welcome message
+      run: echo "Welcome to the first job"
+    - name: checkout repo
+      uses: actions/checkout@v4
+    - name: List files
+      run: ls -lart
+    
+
+
